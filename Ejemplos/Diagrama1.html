@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama1</title>
+</head>
+<body>
+    <script>
+        var numero1, numero2, numero3;
+        do
+        {
+            alert("Introduce tres números DISTINTOS");
+            numero1=parseInt(prompt("Introduce el primer número: "));
+            numero2=parseInt(prompt("Introduce el segundo número: "));
+            numero3=parseInt(prompt("Introduce el tercer número: "));
+        }
+        while (numero1==numero2 && numero2==numero3 && numero1==numero3)
+        document.write("<br><br>Los números son: "+numero1+", "+numero2+" y "+numero3+"");
+        if(numero1>numero2 && numero1>numero3)
+        {
+            document.write("<br>El número mayor es: "+numero1+"");
+        }
+        else
+        if(numero2>numero3)
+        {
+            document.write("<br>El número mayor es: "+numero2+"");
+        }
+        else
+        {
+            document.write("<br>El número mayor es: "+numero3+"");
+        }
+        if(numero1<numero2 && numero1<numero3)
+        {
+            document.write("<br>El número menor es: "+numero1+"");
+        }
+        else
+        if(numero2<numero3)
+        {
+            document.write("<br>El número menor es: "+numero2+"");
+        }
+        else
+        {
+            document.write("<br>El número menor es: "+numero3+"");
+        }
+    </script>
+    
+</body>
+</html>

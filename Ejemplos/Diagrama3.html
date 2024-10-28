@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nota=0, suma=0, contadorNotas=0, promedio=0;
+        nota=parseInt(prompt("Introduzca una nota entre 1 y 10. Pulse 0 para ver el promedio"));
+        //document.write("La nota introducida es: "+nota
+        while (nota!=0)
+        {
+         //contadorNotas++ y contadorNotas=contadorNotas+1 es lo mismo
+         //hay que volver a pedir que introduzca la nota para que le bucle tenga sentido
+         contadorNotas++;
+         suma=suma+nota;
+         nota=parseInt(prompt("Introduzca una nota entre 1 y 10. Pulse 0 para ver el promedio"));
+        }
+        promedio=suma/contadorNotas;
+        document.write("La media de notas es: "+promedio);
+    </script>
+</body>
+</html>

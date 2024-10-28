@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //declaramos e inicializamos variables con "var"
+        var horaEntrada, horaSalida, cuota;
+        var tiempoAparcado=0;
+        horaEntrada=0;
+        horaSalida=0;
+        cuota=10;
+        horaEntrada=prompt("Introduce hora entrada (24h)");
+        //usamos el método promt para recoger información (mostrar un mensaje en pantalla)
+        horaEntrada=parseInt(horaEntrada);
+        //usamos el método parseInt para transformas texto en número
+        document.write("La hora de entrada es: "+horaEntrada+"<br>");
+        //usamos el métodos write del objeto documen para sacar información por pantalla
+        //el "<br>" es para dar un salto de línea
+        horaSalida=prompt("Introduce una hora de salida (24h)");
+        horaSalida=parseInt(horaSalida);
+        document.write("La hora de salida es: "+horaSalida+"<br>");
+        tiempoAparcado=horaSalida-horaEntrada;
+        document.write("El tiempo aparcado es: "+tiempoAparcado+" horas"+"<br>");
+        if (tiempoAparcado>=1)
+        {
+            cuota=cuota+tiempoAparcado*5;
+        }
+        document.write("El total a pagar es: "+cuota+" €");
+        </script>
+</body>
+</html>

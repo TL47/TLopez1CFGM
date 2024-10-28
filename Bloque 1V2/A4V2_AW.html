@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4</title>
+</head>
+<body>
+    <script>
+        let numero1=0, numero2=0, numero3=0, numero4=0;
+        function suma()
+        {
+        numero1=parseInt(prompt("Introduce el primer número: "));
+        numero2=parseInt(prompt("Introduce el segundo número: "));
+        numero3=parseInt(prompt("Introduce el tercer número: "));
+        numero4=parseInt(prompt("Introduce el cuarto valor: "));
+        suma=numero1+numero2+numero3+numero4;
+        return("El resultado es: "+suma);
+        }
+        function producto()
+        {
+        numero1=parseInt(prompt("Introduce el primer número: "));
+        numero2=parseInt(prompt("Introduce el segundo número: "));
+        numero3=parseInt(prompt("Introduce el tercer número: "));
+        numero4=parseInt(prompt("Introduce el cuarto valor: "));
+        producto=numero1*numero2*numero3*numero4;
+        return("El resultado es: "+producto);
+        }
+        let resultadoSuma=suma();
+        let resultadoProducto=producto();
+        document.write(resultadoSuma+"<br>"+resultadoProducto);
+    </script>
+</body>
+</html>

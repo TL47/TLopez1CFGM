@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5</title>
+</head>
+<body>
+    <script>
+        function cesta(precio, cantidad) {
+            let resultado=precio*cantidad;
+            return("El dinero a pagar es: "+resultado);
+        }
+        precio=parseInt(prompt("Introduzca el precio del artículo: "));
+        cantidad=parseInt(prompt("Introduzca que cantidad de producto lleva: "));
+        let resultado=cesta(precio, cantidad);
+        document.write(resultado);
+    </script>
+</body>
+</html>
