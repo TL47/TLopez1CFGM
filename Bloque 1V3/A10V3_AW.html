@@ -8,9 +8,7 @@
 <body>
     <script>
         let numero=0;
-        function valores()
-        {
-            numero=parseInt(prompt("Introduce un número de uno o dos dígitos"));
+        function valores(numero) {
             if (numero>10)
             {
                 return("El valor tiene dos dígitos")
@@ -20,7 +18,8 @@
                 return("El valor tiene un dígito")
             }
         }
-        let resultado=valores();
+        numero=parseInt(prompt("Introduce un número de uno o dos dígitos"));
+        let resultado=valores(numero);
         document.write(resultado);
     </script>
 </body>
