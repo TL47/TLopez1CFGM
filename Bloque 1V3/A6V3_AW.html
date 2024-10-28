@@ -8,10 +8,8 @@
 <body>
     <script>
         let clave1, clave2;
-        function clave()
+        function clave(clave1, clave2)
         {
-            clave1=prompt("Introduce la clave: ");
-            clave2=prompt("Introduce la clave de nuevo: ");
             if(clave1==clave2)
             {
                 return("Has introducido bien la clave");
@@ -21,7 +19,9 @@
                 return("Has introducido mal la clave");
             }
         }
-        let resultado=clave();
+        clave1=prompt("Introduce la clave: ");
+        clave2=prompt("Introduce la clave de nuevo: ");
+        let resultado=clave(clave1, clave2);
         document.write(resultado);
         
     </script>
