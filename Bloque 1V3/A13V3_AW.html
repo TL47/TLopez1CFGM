@@ -7,12 +7,7 @@
 </head>
 <body>
     <script>
-        let numero1=0, numero2=0, numero3=0, total=0;
-        function valores()
-        {
-            numero1=parseInt(prompt("Introduce el primer valor"));
-            numero2=parseInt(prompt("Introduce el segundo valor"));
-            numero3=parseInt(prompt("Introduce el tercer valor"));
+        function valores(numero1, numero2, numero3, total) {
             if (numero1==numero2 && numero2==numero3)
             {
                 total=(numero1+numero2)*numero3
@@ -23,7 +18,10 @@
                 return("Los valores no son iguales")
             }
         }
-        let resultado=valores();
+        numero1=parseInt(prompt("Introduce el primer valor"));
+        numero2=parseInt(prompt("Introduce el segundo valor"));
+        numero3=parseInt(prompt("Introduce el tercer valor"));
+        let resultado=valores(numero1, numero2, numero3, total);
         document.write(resultado);
     </script>
 </body>
