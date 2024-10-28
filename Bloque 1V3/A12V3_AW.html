@@ -7,10 +7,7 @@
 </head>
 <body>
     <script>
-        let numero=0;
-        function valores()
-        {   
-            numero=parseInt(prompt("Introduce un valor de 1, 2 o 3 dígitos"));
+        function valores(numero) {   
             if (numero<10)
             {
                 return("El valor es de 1 dígito")
@@ -34,7 +31,8 @@
                 }
             }
         }
-        let resultado=valores();
+        numero=parseInt(prompt("Introduce un valor de 1, 2 o 3 dígitos"));
+        let resultado=valores(numero);
         document.write(resultado);
     </script>
 </body>
