@@ -7,11 +7,7 @@
 </head>
 <body>
     <script>
-        let sueldo=0, añosDeAntiguedad=0, nuevoSueldo=0;
-        function sueldoAntiguedad()
-        {
-            sueldo=parseInt(prompt("Introduzca el sueldo"));
-            añosDeAntiguedad=parseInt(prompt("Introduzca los años de antigüedad"));
+        function sueldoAntiguedad(sueldo, añosDeAntiguedad, nuevoSueldo) {
             if (sueldo<500 && añosDeAntiguedad>=10)
             {
                 nuevoSueldo=sueldo*0.2+sueldo
@@ -37,7 +33,9 @@
                 }
             }
         }
-        let resultado=sueldoAntiguedad();
+        sueldo=parseInt(prompt("Introduzca el sueldo"));
+        añosDeAntiguedad=parseInt(prompt("Introduzca los años de antigüedad"));
+        let resultado=sueldoAntiguedad(sueldo, añosDeAntiguedad, nuevoSueldo);
         document.write(resultado);
     </script>
 </body>
