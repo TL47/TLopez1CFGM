@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function suma () {
+            let sumaTotal=0, sumando=0, texto;
+            do {
+                sumando=parseInt(prompt("Introduzca un valor a sumar (Introduzca el valor 9999 para obtener el resultado)"));
+                sumaTotal=sumando+sumaTotal
+            } while (sumando!=9999)
+            if (suma<0) {
+                texto="El número introducido es menor a 0"
+            } else {
+                if (suma=0) {
+                    texto="El número introducido es igual a 0"
+                } else {
+                    texto="El número introducido es mayor a 0"
+                }
+            }
+            sumaTotal=sumaTotal-9999
+            return "La suma de todos los números es igual a "+sumaTotal
+        }
+        let resulatado=suma();
+        document.write
+    </script>
+</body>
+</html>
