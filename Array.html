@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        function cargarNombres(lista) {
+            let contador;
+            for(contador=0;contador<lista.length;contador++) {
+                lista [contador]=prompt("Ingrese un nombre");
+            }
+        return lista
+            }
+
+            function crearNuevaLista(lista, lista2) {
+            let contador=0;
+            for (let acumulador = 0; acumulador < lista.length; acumulador++) {
+                 lista2[contador]= lista[acumulador];
+                 
+                 if (f<9)
+                   lista2[contador+1]= "";
+                 contador=contador+2;
+            }  
+        return lista2
+            }
+
+        function imprimirLista(lista2) {
+            for(contador=0;contador<lista2.length;contador++) {
+                document.write(lista2 [contador]);
+            }
+        return ""
+        }
+        lista=new Array (5);
+        lista2=new Array (10);
+        lista=cargarNombres(lista);
+        lista2=crearNuevaLista(lista, lista2);
+        let resultado=imprimirLista(lista2);
+        document.write(resultado);
+    </script>
+</body>
+</html>

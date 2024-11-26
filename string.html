@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        function buscarSubcadena (cadena1, cadena2) {
+        let resultado;
+        if (cadena1.indexOf(cadena2) != -1) {
+            resultado=("La cadena "+cadena2+"está contenida en "+cadena1+"<br>");
+        } else {
+            resultado=("La cadena "+cadena2+"no está condenida en "+cadena1+"<br>");
+        }
+        return resultado
+        }
+        let c1 = prompt('Ingrese una cadena:');
+        let c2 = prompt("Ingrese palabra a buscar");
+        let r = buscarSubcadena(c1, c2);
+        document.write(r);
+    </script>
+</body>
+</html>
