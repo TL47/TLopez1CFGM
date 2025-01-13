@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <form>
+        <select onchange=mostrarprecioPizza(this.value) name="pizzas" id="seleccion">
+            <option value="jamon">Jamón y Queso</option>
+            <option value="mexicana">Mexicana</option>
+            <option value="barbacoa">Barbacoa</option>
+            <option value="morrones">Morrones</option>
+            <option value="muzzarella">Muzzarella</option>
+        </select>
+        <input id="resultado" type="text" disabled>
+    </form>
+
+    <script>
+        const resultado = document.getElementById("resultado");
+
+        function precio(pizza) 
+        {
+            switch (pizza) 
+            {
+                case "jamon":
+                    resultado.value = "10€"
+                    break;
+                case "mexicana":
+                    resultado.value = "25€"
+                    break;
+                case "barbacoa":
+                    resultado.value = "5€"
+                    break;
+                case "muzzarella":
+                    resultado.value = "20€"
+                    break;
+                case "morrones":
+                    resultado.value = "30€"
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

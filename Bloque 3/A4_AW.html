@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <script>
+        function concatenarTexto() 
+        {
+            let nombre = document.getElementById("nombre").value;
+            let apellido = document.getElementById("apellido").value;
+
+            if (nombre === "" || apellido === "") 
+            {
+                alert("Rellenes ambos campos");
+                return;
+            }
+            let suma = nombre + " " + apellido;
+            document.getElementById("resultado").value = suma;
+        }
+    </script>
+
+    <form>
+        <input id="nombre" type="text" placeholder="Introduzca su nombre">
+        <input id="apellido" type="text" placeholder="Introduzca su apellido"><br><br>
+        <input id="resultado" type="text" placeholder="Concatenado" disabled><br><br>
+        <input type="button" value="Enviar" onclick="ConcatenarTexto()">
+    </form>
+
+</body>
+</html>

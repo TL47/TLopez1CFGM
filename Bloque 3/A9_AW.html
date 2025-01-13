@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <script>
+        function mostrarlosDatos() 
+        {
+            let Email=document.getElementById("email").value;
+            let Nombre=document.getElementById("nombre").value;
+            let Comentarios=document.getElementById("comentarios").value;
+
+            alert("nombre: "+Nombre+" "+"email: "+Email+" "+"comentarios: "+Comentarios);
+        }
+    </script>
+    
+    <form onsubmit="mostrarlosDatos(); return false;">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required><br><br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
