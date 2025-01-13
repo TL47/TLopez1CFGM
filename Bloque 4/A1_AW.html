@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <script src="A1_AW_js.js"></script>
+</head>
+<body>
+    <form>
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" onfocus="this.style.background='lightyellow';" onblur="this.style.background='';"><br><br>
+        
+        <label for="password">Clave:</label>
+        <input type="password" id="password" name="password" onfocus="this.style.background='lightyellow';" onblur="validatePassword(); this.style.background='';"><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
