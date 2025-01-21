@@ -1,6 +1,6 @@
-function validatePassword() {
-    let password = document.getElementById("password").value;
-    if (password.length < 7 || password.length > 20) {
-            alert("La clave debe tener entre 7 y 20 caracteres.");
+function comprobar() {
+        let clave = document.getElementById("pass").value;
+        if (clave.length < 7 || clave.length > 20) {
+                alert("La contraseña debe tener entre 7 y 20 caracteres.");
+            }
         }
-    }

@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 1</title>
-    <script src="A1_AW_js.js"></script>
 </head>
 <body>
+    <script src="A1_AW_js.js"></script>
     <form>
-        <label for="username">Nombre de usuario:</label>
-        <input type="text" id="username" name="username" onfocus="this.style.background='lightyellow';" onblur="this.style.background='';"><br><br>
+        <label>Usuario:</label>
+        <input id="user" type="text"><br><br>
         
-        <label for="password">Clave:</label>
-        <input type="password" id="password" name="password" onfocus="this.style.background='lightyellow';" onblur="validatePassword(); this.style.background='';"><br><br>
-        
-        <input type="submit" value="Enviar">
+        <label>Contraseña</label>
+        <input id="pass" type="password" onblur="comprobar()"><br><br>
+
+        <input type="submit">
     </form>
 </body>
 </html>
