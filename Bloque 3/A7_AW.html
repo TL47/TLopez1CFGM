@@ -4,25 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 7</title>
+    <script src="A7_AW_js.js"></script>
 </head>
 <body>
-    <script>
-        function deportes()
-        {
-            const deportes=document.getElementsByName("deportes");
-            let texto = "Los deportes que practica son: ";
-
-            for (let i=0;i<deportes.length;i++) 
-            {
-                if (deportes[i].checked) 
-                {
-                    mensaje+=deportes[i].value +", ";
-                }
-            }
-            alert(texto);
-        }
-    </script>
-
         <p>Selecciona los deportes que practicas:<p>
 
         <form>

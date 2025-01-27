@@ -4,20 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 9</title>
+    <script src="A9_AW_js.js"></script>
 </head>
 <body>
-    <script>
-        function mostrarlosDatos() 
-        {
-            let Email=document.getElementById("email").value;
-            let Nombre=document.getElementById("nombre").value;
-            let Comentarios=document.getElementById("comentarios").value;
-
-            alert("nombre: "+Nombre+" "+"email: "+Email+" "+"comentarios: "+Comentarios);
-        }
-    </script>
-    
-    <form onsubmit="mostrarlosDatos(); return false;">
+<form onsubmit="mostrarlosDatos(); return false;">
         <label for="nombre">Nombre:</label><br>
         <input type="text" id="nombre" required><br><br>
 

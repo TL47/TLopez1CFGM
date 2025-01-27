@@ -4,31 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 6</title>
+    <script src="A6_AW_js.js"></script>
 </head>
 <body>
-
-    <script>
-        function calcularPrecio()
-        {
-            let pizza = document.getElementById("pizza");
-            let cantidad = document.getElementById("cantidad");
-            let resultado = document.getElementById("resultado");
-            
-            switch (pizza.value) 
-            {
-                case "queso":
-                    resultado.value = cantidad.value * 4 + "€";
-                    break;
-                case "jamon":
-                    resultado.value = cantidad.value * 6 + "€";
-                    break;
-                case "especial":
-                    resultado.value = cantidad.value * 10 + "€";
-                    break;
-            }
-        }
-    </script>
-
     <form>
         <label for="pizza">Seleccione la pizza que quiera:</label>
             <select name="pizza" id="pizza">
